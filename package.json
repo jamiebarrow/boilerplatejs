@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "boilerplatejs",
+  "version": "0.1.0",
+  "description": "BoilerplateJS - JavaScript Reference Architecture",
+  "author": "James Barrow",
+  "keywords": [
+    "boilerplatejs"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamiebarrow/boilerplatejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jamiebarrow/boilerplatejs/issues"
+  },
+  "homepage": "https://github.com/jamiebarrow/boilerplatejs#readme",
+  "scripts": {
+    "start": "http-server -o -c-1",
+    "docs:generate": "cd tools/documentation && document.bat",
+    "docs:serve": "cd tools/documentation/docs && http-server -o -c-1",
+    "samples:build": "cd tools/optimizer && optimizer.bat",
+    "samples:serve": "cd tools/optimizer/build && http-server -o -c-1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "yuidocjs": "^0.10.2"
+  }
+}

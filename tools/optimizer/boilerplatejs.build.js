@@ -12,4 +12,5 @@
 		i18n : "./libs/require/i18n",
 		path : "./libs/require/path"
 	},
+	fileExclusionRegExp: /^node_modules$/
 })

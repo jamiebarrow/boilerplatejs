@@ -27,6 +27,38 @@ http://boilerplatejs.org
 However this is no longer maintained, and the source for the website can be found in the below repository:
 https://github.com/jamiebarrow/boilerplatejs-website
 
+## Viewing Sample Locally ##
+
+You can run the below npm scripts for convenience, to launch the sample:
+
+```shell
+npm start
+```
+
+To run an optimized version that has gone through the `r.js` optimizer, do the below:
+```shell
+npm run samples:build
+npm run samples:serve
+```
+
+See [./tools/optimizer/README.md](./tools/optimizer/README.md) for more details.
+
+
+## Code Documentation Generation ##
+It is possible to generate code documentation using YUIDoc.
+See [`./tools/documentation/README.md`](./tools/documentation/README.md) for more information.
+
+This can be generated using a convenience npm script:
+
+```shell
+npm run docs:generate
+```
+
+And these can then be served using an `http-server` development server using:
+```shell
+npm run docs:serve
+```
+
 ## License ##
 BoilerplateJS code is free for commercial and non-commercial deployment and distribution. BoilerplateJS is released under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
 
